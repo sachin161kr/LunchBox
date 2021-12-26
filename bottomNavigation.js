@@ -8,6 +8,7 @@ const Tab = createBottomTabNavigator();
 import search from "./tabScreens/Search";
 import profile from "./tabScreens/Profile";
 
+
 import searchIcon from "./assets/searchIcon.png";
 import profileIcon from "./assets/profileIcon.png"
 
@@ -18,12 +19,9 @@ const MyTab = ()=>{
                 {   
                     tabBarStyle : {
                         position : "absolute",
-                        bottom : 25,
-                        left : 20,
-                        right : 20,
                         backgroundColor : "#FFFFFF",
                         borderRadius : 15,
-                        height : 90,
+                        height : 80,
                     },
 
                     tabBarLabelStyle : {
@@ -60,7 +58,6 @@ const MyTab = ()=>{
                 }
             }
             />
-            
           <Tab.Screen 
           name="Profile" 
           component={profile} 
