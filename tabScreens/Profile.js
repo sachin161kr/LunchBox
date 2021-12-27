@@ -6,7 +6,7 @@ import {
 const profile = ()=>{
   return (
     <>
-    
+         <Text>Profile</Text>
     </>
   )
 }

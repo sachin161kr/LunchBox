@@ -5,7 +5,6 @@ import {
   StyleSheet,
   View ,
   TouchableOpacity,
-  Alert,
   ScrollView,
 } from 'react-native';
 
@@ -40,8 +39,7 @@ const screen1 = ({navigation}) => {
                 <TouchableOpacity 
                 key={key.key} 
                 onPress={()=>{
-                   //Alert.alert(`${key.text} is Pressed`);
-                   navigation.navigate('Screen 1');
+                   navigation.navigate('Screen 2');
 
                 }} 
                 >

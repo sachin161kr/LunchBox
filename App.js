@@ -1,14 +1,15 @@
 import React from 'react';
 
 import {NavigationContainer} from '@react-navigation/native';
-import MyTab from './bottomNavigation';
 
-const MyStack = ()=>{
-  return(
+import BottomTabNavigator from "./navigation/TabNavigator";
+
+const App = () => {
+  return (
     <NavigationContainer>
-      <MyTab/>
+      <BottomTabNavigator/>
     </NavigationContainer>
-  )
+  );
 }
+export default App
 
-export default MyStack;
