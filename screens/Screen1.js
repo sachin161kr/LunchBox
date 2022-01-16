@@ -110,8 +110,8 @@ const screen1 = ({navigation}) => {
              justifyContent : 'space-evenly',
              borderWidth : 3,
              borderColor : '#000000',
-             marginLeft: 15,
-             marginRight: 15,
+             marginLeft: 25,
+             marginRight: 25,
              borderRadius: 5,
              paddingBottom : 5,
           }
@@ -133,7 +133,8 @@ const screen1 = ({navigation}) => {
                      itemSelected=="breakfast"?
                      "red":
                      "#000000"
-                   
+                    ,
+                    paddingRight : 15,                   
                  }
                }
             >Breakfast</Text>
@@ -200,13 +201,14 @@ const screen1 = ({navigation}) => {
               <Text
                style={
                  {  
-                    height : 120,
-                    width : 120,
+                    height : 130,
+                    width : 130,
                     fontSize : 30,
                     borderWidth : 3,
-                    margin : 30,
+                    margin : 20,
                     textAlign : "center",
                     textAlignVertical : "center",
+                    color : '#000000'
                     
                  }
                }
@@ -229,13 +231,14 @@ const screen1 = ({navigation}) => {
             <Text
              style={
                {  
-                  height : 120,
-                  width : 120,
+                  height : 130,
+                  width : 130,
                   fontSize : 30,
                   borderWidth : 3,
-                  margin : 30,
+                  margin : 20,
                   textAlign : "center",
                   textAlignVertical : "center",
+                  color : '#000000'
                   
                }
              }
@@ -257,13 +260,14 @@ const screen1 = ({navigation}) => {
           <Text
            style={
              {  
-                height : 120,
-                width : 120,
+                height : 130,
+                width : 130,
                 fontSize : 30,
                 borderWidth : 3,
-                margin : 30,
+                margin : 20,
                 textAlign : "center",
                 textAlignVertical : "center",
+                color : '#000000'
                 
              }
            }
@@ -285,8 +289,8 @@ const styles = StyleSheet.create({
     width : 365,
     fontSize: 30,
     textAlign: 'center',
-    
-    //marginTop: 30,
+    color : "#000000",
+    marginTop: 30,
     borderWidth: 3,
     // paddingTop: 25,
     // paddingBottom: 25,
@@ -296,7 +300,7 @@ const styles = StyleSheet.create({
   },
   gridContainer: {
     flex: 1,
-    margin: 5,
+    margin: 15,
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: "flex-start",

@@ -6,7 +6,16 @@ import {
 const profile = ()=>{
   return (
     <>
-         <Text>Profile</Text>
+         <Text
+           style={
+             {
+               fontSize : 30,
+               color : "#000000",
+               textAlign : "center",
+               marginTop : 20,
+             }
+           }
+         >User Profile</Text>
     </>
   )
 }

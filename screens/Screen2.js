@@ -19,6 +19,7 @@ const screen2 = ({route})=>{
                      fontSize : 20,
                      textAlign : "center",
                      marginTop : 20,
+                     color : "#000000"
                  }
              }
           >Kitchens with {itemSelected} in their Menu</Text>    
@@ -42,6 +43,7 @@ const styles = StyleSheet.create({
         paddingBottom: 25,
         marginLeft: 15,
         marginRight: 15,
+        color : "#000000",
         borderRadius: 15,
       },
 })
