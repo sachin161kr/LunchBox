@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import {
     Text,
     View,
@@ -6,13 +6,25 @@ import {
     StyleSheet,
 } from "react-native";
 
-const screen2 = ()=>{
-   return(
+const screen2 = ({route})=>{
+    var itemSelected = route.params.itemSelected;
+    //const [item,setItem] = useState(`${itemSelected}`);
+   
+    return(
        <>
           <ScrollView>
+          <Text
+             style = {
+                 {
+                     fontSize : 20,
+                     textAlign : "center",
+                     marginTop : 20,
+                 }
+             }
+          >Kitchens with {itemSelected} in their Menu</Text>    
           <Text style={styles.banner}>Shweta Kitchen</Text>
-          <Text style={styles.banner}></Text>
-          <Text style={styles.banner}></Text>
+          <Text style={styles.banner}>Rahul's Kitchen</Text>
+          <Text style={styles.banner}>Aman's Kitchen</Text>
           </ScrollView>
        </>
    )
