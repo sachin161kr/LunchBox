@@ -5,10 +5,13 @@ import {
 } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import { MainStackNavigator, ProfileStackNavigator } from "./StackNavigator";
+import { MainStackNavigator, SubscriptionStackNavigator , WalletStackNavigator , OfferStackNavigator } from "./StackNavigator";
 
-import profileIcon from "../assets/profileIcon.png";
+import walletIcon from "../assets/walleticon.png";
 import searchIcon from "../assets/searchIcon.png"
+
+import offers from "../assets/offers.png";
+import subs from "../assets/subs.png";
 
 
 const Tab = createBottomTabNavigator();
@@ -26,7 +29,7 @@ const BottomTabNavigator = () => {
             },
 
             tabBarLabelStyle : {
-                fontSize : 20,
+                fontSize : 13,
                 padding : 5,
             }
             
@@ -34,7 +37,7 @@ const BottomTabNavigator = () => {
     }
     >
       <Tab.Screen 
-        name="Lunch Box" 
+        name="ZOOD" 
         component={MainStackNavigator} 
         options={
             {  
@@ -60,8 +63,8 @@ const BottomTabNavigator = () => {
         }
         />
       <Tab.Screen 
-      name="Profile"
-      component={ProfileStackNavigator} 
+      name="Subscriptions"
+      component={SubscriptionStackNavigator} 
       options={
         {
             tabBarIcon : ({focused})=>(
@@ -71,7 +74,7 @@ const BottomTabNavigator = () => {
                     }
                 }>
                     <Image
-                       source={profileIcon}
+                       source={subs}
                        style = {
                            {
                                height : 45,
@@ -84,6 +87,57 @@ const BottomTabNavigator = () => {
         }
     }
       />
+       <Tab.Screen 
+      name="Offers"
+      component={OfferStackNavigator} 
+      options={
+        {
+            tabBarIcon : ({focused})=>(
+                <View style={
+                    {
+                        marginTop : 10,
+                    }
+                }>
+                    <Image
+                       source={offers}
+                       style = {
+                           {
+                               height : 55,
+                               width : 55,
+                           }
+                       }
+                    />
+                </View>
+            )
+        }
+    }
+      />
+       <Tab.Screen 
+        name="Wallet" 
+        component={WalletStackNavigator} 
+        options={
+            {  
+               tabBarIcon : ({focused})=>(
+                    <View style={
+                        {
+                            marginTop : 10,
+                        }
+                    }>
+                        <Image
+                           source={walletIcon}
+                           style = {
+                               {
+                                   height : 50,
+                                   width : 50,
+                                   
+                               }
+                           }
+                        />
+                    </View>
+                )
+            }
+        }
+        />
     </Tab.Navigator>
   );
 };

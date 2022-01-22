@@ -6,7 +6,7 @@ import {
     StyleSheet,
 } from "react-native";
 
-const screen2 = ({route})=>{
+const Screen2 = ({route})=>{
     var itemSelected = route.params.itemSelected;
     //const [item,setItem] = useState(`${itemSelected}`);
    
@@ -31,7 +31,7 @@ const screen2 = ({route})=>{
    )
 }
 
-export default screen2;
+export default Screen2;
 
 const styles = StyleSheet.create({
     banner: {

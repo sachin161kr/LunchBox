@@ -55,7 +55,7 @@ const dinner = [
   },
 ];
 
-const screen1 = ({navigation}) => {
+const Screen1 = ({navigation}) => {
   var hours = new Date().getHours();
   var min = new Date().getMinutes();
   var currentTime = "";
@@ -281,7 +281,7 @@ const screen1 = ({navigation}) => {
   );
 };
 
-export default screen1;
+export default Screen1;
 
 const styles = StyleSheet.create({
   banner: {
