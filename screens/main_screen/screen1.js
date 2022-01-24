@@ -14,18 +14,32 @@ import SearchBar from 'react-native-dynamic-search-bar';
 import profileIcon from "../../assets/profileIcon.png";
 import location from "../../assets/location.png";
 
+import pratha from "../../assets/Pratha.png";
+
 const breakfast = [
   {
     key: 0,
     text: 'Bread',
+    image : pratha,
+    description : "Aloo Pratha , Paneer Pratha , Pyaz Pratha",
+    price : 25,
+    bestSeller : true,
   },
   {
     key: 1,
     text: 'Poha',
+    image : pratha,
+    description : "Aloo Pratha , Paneer Pratha , Pyaz Pratha",
+    price : 25,
+    bestSeller : false,
   },
   {
     key: 2,
-    text: 'Aaloo\nParatha',
+    text: 'Aaloo Paratha',
+    image : pratha,
+    description : "Aloo Pratha , Paneer Pratha , Pyaz Pratha",
+    price : 25,
+    bestSeller : true,
   },
 ];
 
@@ -33,14 +47,26 @@ const lunch = [
   {
     key: 0,
     text: 'Chicken',
+    image : pratha,
+    description : "Aloo Pratha , Paneer Pratha , Pyaz Pratha",
+    price : 25,
+    bestSeller : false,
   },
   {
     key: 1,
     text: 'Fish',
+    image : pratha,
+    description : "Aloo Pratha , Paneer Pratha , Pyaz Pratha",
+    price : 25,
+    bestSeller : true,
   },
   {
     key: 2,
-    text: 'Veg\nThali',
+    text: 'Veg Thali',
+    image : pratha,
+    description : "Aloo Pratha , Paneer Pratha , Pyaz Pratha",
+    price : 25,
+    bestSeller : false,
   },
 ];
 
@@ -48,14 +74,26 @@ const dinner = [
   {
     key: 0,
     text: 'Egg Curry',
+    image : pratha,
+    description : "Aloo Pratha , Paneer Pratha , Pyaz Pratha",
+    price : "Rs. 25",
+    bestSeller : true
   },
   {
     key: 1,
-    text: 'Palak\nPaneer',
+    text: 'Palak Paneer',
+    image : pratha,
+    description : "Aloo Pratha , Paneer Pratha , Pyaz Pratha",
+    price : 30,
+    bestSeller : false,
   },
   {
     key: 2,
     text: 'Biryani',
+    image : pratha,
+    description : "Aloo Pratha , Paneer Pratha , Pyaz Pratha",
+    price : 25,
+    bestSeller : false,
   },
 ];
 
@@ -183,7 +221,6 @@ const Screen1 = ({navigation}) => {
         
         <ScrollView
           horizontal={true}
-          pagingEnabled={true}
           style={{
             flexDirection: 'row',
           }}>
@@ -312,22 +349,86 @@ const Screen1 = ({navigation}) => {
                       itemSelected: `${key.text}`,
                     });
                   }}>
-                  <Text
+                  <View
                     style={{
                       height: 164,
                       width: 344.4,
+                      
                       borderRadius: 20,
-                      fontSize: 30,
+                      // fontSize: 30,
                       //borderWidth: 3,
+                      flexDirection : "row",
                       elevation : 5,
                       backgroundColor : "#FFFFFF",
-                      textAlign: 'center',
-                      textAlignVertical: 'center',
-                      color: '#000000',
+                      // textAlign: 'center',
+                      // textAlignVertical: 'center',
+                      // color: '#000000',
                       margin: 15,
                     }}>
-                    {key.text}
-                  </Text>
+                     <View 
+                      style={
+                        {
+                           flexDirection : "column",
+                           flex : 1,
+                           marginTop : 10,
+                           marginLeft : 20,
+                           
+                        }
+                      }
+                    >
+                    <Text
+                       style={
+                         {
+                           fontSize : 24,
+                          
+                           
+                         }
+                       }
+                    >{key.text}</Text>
+                    <Text
+                       style={
+                         {
+                            fontSize : 18,
+                         }
+                       }
+                    >{key.description}</Text>
+                    <Text
+                      style={
+                        {
+                          marginTop : 5,
+                        }
+                      }
+                    >Starting at Rs.{key.price}</Text>
+                    {
+                       key.bestSeller==true?
+                       <Text
+                          style={
+                            {
+                              color : "#FFFFFF",
+                              backgroundColor : "red",
+                              marginRight : 120,
+                              padding : 5,
+                              marginTop : 5,
+                            }
+                          }
+                       >Bestseller</Text>
+                       :
+                       <></>
+                    }
+                    </View>
+                    <Image
+                      source={pratha}
+                      style = {
+                        {
+                           height : 140,
+                           resizeMode : "stretch",
+                           width : 130,
+                           marginTop : 15,
+                           
+                        }
+                      }
+                    />
+                  </View>
                 </TouchableOpacity>
               ))
             : itemSelected == 'lunch'
@@ -339,22 +440,86 @@ const Screen1 = ({navigation}) => {
                       itemSelected: `${key.text}`,
                     });
                   }}>
-                  <Text
+                 <View
                     style={{
                       height: 164,
                       width: 344.4,
+                      
                       borderRadius: 20,
-                      fontSize: 30,
+                      // fontSize: 30,
                       //borderWidth: 3,
+                      flexDirection : "row",
                       elevation : 5,
                       backgroundColor : "#FFFFFF",
-                      textAlign: 'center',
-                      textAlignVertical: 'center',
-                      color: '#000000',
+                      // textAlign: 'center',
+                      // textAlignVertical: 'center',
+                      // color: '#000000',
                       margin: 15,
                     }}>
-                    {key.text}
-                  </Text>
+                     <View 
+                      style={
+                        {
+                           flexDirection : "column",
+                           flex : 1,
+                           marginTop : 10,
+                           marginLeft : 20,
+                           
+                        }
+                      }
+                    >
+                    <Text
+                       style={
+                         {
+                           fontSize : 24,
+                          
+                           
+                         }
+                       }
+                    >{key.text}</Text>
+                    <Text
+                       style={
+                         {
+                            fontSize : 18,
+                         }
+                       }
+                    >{key.description}</Text>
+                    <Text
+                      style={
+                        {
+                          marginTop : 5,
+                        }
+                      }
+                    >Starting at Rs.{key.price}</Text>
+                    {
+                       key.bestSeller==true?
+                       <Text
+                          style={
+                            {
+                              color : "#FFFFFF",
+                              backgroundColor : "red",
+                              marginRight : 120,
+                              padding : 5,
+                              marginTop : 5,
+                            }
+                          }
+                       >Bestseller</Text>
+                       :
+                       <></>
+                    }
+                    </View>
+                    <Image
+                      source={pratha}
+                      style = {
+                        {
+                           height : 140,
+                           resizeMode : "stretch",
+                           width : 130,
+                           marginTop : 15,
+                           
+                        }
+                      }
+                    />
+                  </View>
                 </TouchableOpacity>
               ))
             : dinner.map(key => (
@@ -365,22 +530,86 @@ const Screen1 = ({navigation}) => {
                       itemSelected: `${key.text}`,
                     });
                   }}>
-                  <Text
+                  <View
                     style={{
                       height: 164,
                       width: 344.4,
+                      
                       borderRadius: 20,
-                      fontSize: 30,
-                      // borderWidth: 3,
+                      // fontSize: 30,
+                      //borderWidth: 3,
+                      flexDirection : "row",
                       elevation : 5,
                       backgroundColor : "#FFFFFF",
-                      textAlign: 'center',
-                      textAlignVertical: 'center',
-                      color: '#000000',
+                      // textAlign: 'center',
+                      // textAlignVertical: 'center',
+                      // color: '#000000',
                       margin: 15,
                     }}>
-                    {key.text}
-                  </Text>
+                     <View 
+                      style={
+                        {
+                           flexDirection : "column",
+                           flex : 1,
+                           marginTop : 10,
+                           marginLeft : 20,
+                           
+                        }
+                      }
+                    >
+                    <Text
+                       style={
+                         {
+                           fontSize : 24,
+                          
+                           
+                         }
+                       }
+                    >{key.text}</Text>
+                    <Text
+                       style={
+                         {
+                            fontSize : 18,
+                         }
+                       }
+                    >{key.description}</Text>
+                    <Text
+                      style={
+                        {
+                          marginTop : 5,
+                        }
+                      }
+                    >Starting at Rs.{key.price}</Text>
+                    {
+                       key.bestSeller==true?
+                       <Text
+                          style={
+                            {
+                              color : "#FFFFFF",
+                              backgroundColor : "red",
+                              marginRight : 120,
+                              padding : 5,
+                              marginTop : 5,
+                            }
+                          }
+                       >Bestseller</Text>
+                       :
+                       <></>
+                    }
+                    </View>
+                    <Image
+                      source={pratha}
+                      style = {
+                        {
+                           height : 140,
+                           resizeMode : "stretch",
+                           width : 130,
+                           marginTop : 15,
+                           
+                        }
+                      }
+                    />
+                  </View>
                 </TouchableOpacity>
               ))}
         </View>
