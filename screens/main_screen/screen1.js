@@ -76,7 +76,7 @@ const dinner = [
     text: 'Egg Curry',
     image : pratha,
     description : "Aloo Pratha , Paneer Pratha , Pyaz Pratha",
-    price : "Rs. 25",
+    price : 25,
     bestSeller : true
   },
   {
@@ -173,7 +173,7 @@ const Screen1 = ({navigation}) => {
                   
                   fontSize : 20,
                   marginLeft : 10,
-                  color : "#777777"
+                  color : "#000000"
                   //textAlignVertical : "center",
                 }
               } 
@@ -332,7 +332,7 @@ const Screen1 = ({navigation}) => {
         <Text
           style={{
             marginLeft: 25,
-            color : "#777777",
+            color : "#000000",
             //fontWeight : "300",
             fontSize: 20,
             marginTop : 20,
@@ -380,7 +380,7 @@ const Screen1 = ({navigation}) => {
                        style={
                          {
                            fontSize : 24,
-                          
+                           color : "#000000"
                            
                          }
                        }
@@ -389,6 +389,7 @@ const Screen1 = ({navigation}) => {
                        style={
                          {
                             fontSize : 18,
+                            color : "#000000"
                          }
                        }
                     >{key.description}</Text>
@@ -396,6 +397,7 @@ const Screen1 = ({navigation}) => {
                       style={
                         {
                           marginTop : 5,
+                          color : "#000000"
                         }
                       }
                     >Starting at Rs.{key.price}</Text>
@@ -471,7 +473,7 @@ const Screen1 = ({navigation}) => {
                        style={
                          {
                            fontSize : 24,
-                          
+                           color : "#000000"
                            
                          }
                        }
@@ -480,6 +482,7 @@ const Screen1 = ({navigation}) => {
                        style={
                          {
                             fontSize : 18,
+                            color : "#000000"
                          }
                        }
                     >{key.description}</Text>
@@ -487,6 +490,7 @@ const Screen1 = ({navigation}) => {
                       style={
                         {
                           marginTop : 5,
+                          color : "#000000"
                         }
                       }
                     >Starting at Rs.{key.price}</Text>
@@ -561,7 +565,7 @@ const Screen1 = ({navigation}) => {
                        style={
                          {
                            fontSize : 24,
-                          
+                           color : "#000000"
                            
                          }
                        }
@@ -570,6 +574,7 @@ const Screen1 = ({navigation}) => {
                        style={
                          {
                             fontSize : 18,
+                            color : "#000000"
                          }
                        }
                     >{key.description}</Text>
@@ -577,6 +582,7 @@ const Screen1 = ({navigation}) => {
                       style={
                         {
                           marginTop : 5,
+                          color : "#000000"
                         }
                       }
                     >Starting at Rs.{key.price}</Text>

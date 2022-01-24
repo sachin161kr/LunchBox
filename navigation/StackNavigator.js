@@ -54,7 +54,12 @@ const MainStackNavigator = () => {
         <Stack.Screen 
           name="Screen 2" 
           component={Screen2} 
-         
+          options={
+            {
+              headerShown : false,
+              headerTitle : "",
+            }
+          }
           />
       </Stack.Navigator>
     );
