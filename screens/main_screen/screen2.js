@@ -54,54 +54,63 @@ const Screen2 = ({route})=>{
                  {
                      flexDirection : "row",
                      justifyContent : "space-between",
-                     marginTop : 10,
+                     marginTop : 11,
                  }
              }
           >
           <Text 
             style = {
                 {
-                    fontSize : 20,
-                    marginLeft : 15,
+                    fontSize : 22,
+                    marginLeft : 14,
                     color : "#000000",
+                    height : 26,
+                    width : 240,
+                    fontWeight : "400",
                 }
             }
           >Aloo Pratha x2 , Dahi</Text>
           <Text
           style={
-              {
-                fontSize : 20,
-                marginRight : 10,
+              { 
+                height : 25,
+                width : 60,  
+                fontSize : 16,
+                marginRight : 13,
                 color : "#FFFFFF",
                 backgroundColor : "green",
-                paddingLeft : 6,
-                paddingRight : 6,
+                textAlign : "center",
+                
               }
           }
-          >4.2</Text>
+          >⭐4.2</Text>
           </View>
           <View
             style = {
                 {
                     flexDirection : "row",
                     justifyContent : "space-between",
-                    marginTop : 5,
+                    marginLeft : 14,
+                    marginTop : 7,
                 }
             }
           >
           <Text
              style = {
-                 {
-                    marginLeft : 15,
+                 { 
+                    height : 18,
+                    width : 210,  
+                    fontWeight : "500",
+                    // marginLeft : 15,
                     color : "#000000",
-                    fontSize : 18,
+                    fontSize : 15,
                  }
              }
           >Shweta's Kitchen</Text>
           <Text
              style = {
                  {
-                    marginRight : 10,
+                    marginRight : 13,
                     color : "#000000",
                     fontSize : 18,
                  }
@@ -120,17 +129,23 @@ const Screen2 = ({route})=>{
              style={
                  {
                      marginLeft : 15,
-                     fontSize : 16,
+                     fontSize : 13,
                      color : "#FFFFFF",
                      backgroundColor : "#002FA7", 
+                     height : 20,
+                     width : 148,
+                     textAlign : "center",
                  }
              }
           >Popular for Breakfast</Text>
           <Text
              style = {
-                 {
+                 {   
+                     height : 20,
+                     width : 30,
                      marginLeft : 10,
-                     fontSize : 16,
+                     fontSize : 13,
+                     textAlign : "center",
                      color : "#FFFFFF",
                      backgroundColor : "#03A700", 
                  }
@@ -139,11 +154,13 @@ const Screen2 = ({route})=>{
         <Text
           style={
               {
-                marginLeft : 10,
-                fontSize : 16,
+                marginLeft : 9,
+                fontSize : 13,
                 color : "#FFFFFF",
                 backgroundColor : "#A70000",
-
+                height : 20,
+                width : 41,
+                textAlign : "center",
               }
           }
         >Spicy</Text>
@@ -164,6 +181,12 @@ const Screen2 = ({route})=>{
                 }
             }
           >
+
+
+
+
+
+
           <Image
               source={aloo2}
               style = {
@@ -180,54 +203,62 @@ const Screen2 = ({route})=>{
                  {
                      flexDirection : "row",
                      justifyContent : "space-between",
-                     marginTop : 10,
+                     marginTop : 11,
                  }
              }
           >
           <Text 
             style = {
                 {
-                    fontSize : 20,
-                    marginLeft : 15,
+                    fontSize : 22,
+                    marginLeft : 14,
                     color : "#000000",
+                    height : 26,
+                    width : 240,
+                    fontWeight : "400",
                 }
             }
           >Gobhi Pratha x2 , Dahi</Text>
           <Text
           style={
               {
-                fontSize : 20,
-                marginRight : 10,
+                height : 25,
+                width : 60,  
+                fontSize : 16,
+                marginRight : 13,
                 color : "#FFFFFF",
                 backgroundColor : "green",
-                paddingLeft : 6,
-                paddingRight : 6,
+                textAlign : "center",
               }
           }
-          >4.2</Text>
+          >⭐3.7</Text>
           </View>
           <View
             style = {
                 {
                     flexDirection : "row",
                     justifyContent : "space-between",
-                    marginTop : 5,
+                    marginLeft : 14,
+                    marginTop : 7,
                 }
             }
           >
           <Text
              style = {
                  {
-                    marginLeft : 15,
+                    height : 18,
+                    width : 210,  
+                    fontWeight : "500",
+                    // marginLeft : 15,
                     color : "#000000",
-                    fontSize : 18,
+                    fontSize : 15,
                  }
              }
           >Neha's Kitchen</Text>
           <Text
              style = {
                  {
-                    marginRight : 10,
+                    marginRight : 13,
                     color : "#000000",
                     fontSize : 18,
                  }
@@ -245,10 +276,13 @@ const Screen2 = ({route})=>{
           <Text
              style={
                  {
-                     marginLeft : 15,
-                     fontSize : 16,
-                     color : "#FFFFFF",
-                     backgroundColor : "#002FA7", 
+                    marginLeft : 15,
+                    fontSize : 13,
+                    color : "#FFFFFF",
+                    backgroundColor : "#002FA7", 
+                    height : 20,
+                    width : 148,
+                    textAlign : "center",
                  }
              }
           >Popular for Breakfast</Text>
@@ -265,10 +299,13 @@ const Screen2 = ({route})=>{
         <Text
           style={
               {
-                marginLeft : 10,
-                fontSize : 16,
+                marginLeft : 9,
+                fontSize : 13,
                 color : "#FFFFFF",
                 backgroundColor : "#A70000",
+                height : 20,
+                width : 41,
+                textAlign : "center",
 
               }
           }
