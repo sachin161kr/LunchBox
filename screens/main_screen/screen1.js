@@ -15,11 +15,12 @@ import profileIcon from "../../assets/profileIcon.png";
 import location from "../../assets/location.png";
 
 import pratha from "../../assets/Pratha.png";
+import { clearErrors } from 'react-native/Libraries/LogBox/Data/LogBoxData';
 
 const breakfast = [
   {
     key: 0,
-    text: 'Bread',
+    text: 'Parathas',
     image : pratha,
     description : "Aloo Pratha , Paneer Pratha , Pyaz Pratha",
     price : 25,
@@ -133,16 +134,17 @@ const Screen1 = ({navigation}) => {
           style={{
             flexDirection: 'row',
             justifyContent : "flex-start",
+            marginLeft : 16.38,
           }}>
             
             <Image
                source={location}
                style={
                  {
-                   height : 50,
-                   width : 40,
+                   height : 35.54,
+                   width : 29.25,
                    resizeMode : "stretch",
-                   marginLeft : 15
+                  
                   //  borderWidth : 1,
                   //  borderColor : "#000000",
                    
@@ -153,15 +155,19 @@ const Screen1 = ({navigation}) => {
                style = {  
                  {
                       flexDirection : "column",
+                      marginLeft : 9.37
+                     
                  }
                }
             >
             <Text
               style={
                 {
-                  
+                  height : 23,
+                  width : 57,
+                  fontWeight : "500",
                   fontSize : 20,
-                  marginLeft : 10,
+                 
                   color : "#FFCB00",
                   //textAlignVertical : "center",
                 }
@@ -170,9 +176,11 @@ const Screen1 = ({navigation}) => {
              <Text
               style={
                 {
-                  
-                  fontSize : 20,
-                  marginLeft : 10,
+                  height : 16,
+                  width : 233,
+                  fontSize : 14,
+                  fontWeight : "400",
+                 
                   color : "#000000"
                   //textAlignVertical : "center",
                 }
@@ -190,12 +198,12 @@ const Screen1 = ({navigation}) => {
                           resizeMode="contain"
                           style = {
                             { 
-                              height : 40,
-                              width : 40,
-                              marginTop : 10,
-                              marginBottom : 15,
-                              marginLeft : 55,
-                              marginRight : 5,
+                              height : 32.5,
+                              width : 32.5,
+                              marginTop : 1.87,
+                              marginLeft : 52.25,
+                              
+                              
                             }
                           }
                       />
@@ -207,11 +215,14 @@ const Screen1 = ({navigation}) => {
           onPress={() => alert('onPress')}
 
           style={
-            {
-               marginTop : 5,
+            {  
+               height : 42,
+               width : 357,
+               marginTop : 16,
                //borderWidth: 1,
                elevation : 10,
-               marginBottom  : 25,
+               marginBottom  : 23,
+               borderRadius : 10,
               
                
             }
@@ -224,31 +235,101 @@ const Screen1 = ({navigation}) => {
           style={{
             flexDirection: 'row',
           }}>
-          <Text style={styles.banner}>Get 50% OFF on your first order</Text>
-          <Text style={
+          <View style={
             {
-              height: 185,
-              width: 194,
-              fontSize: 25,
-              padding : 10,
-              textAlign: 'center',
-              color: '#FFFFFF',
-              elevation : 10,
-              fontWeight : "bold",
-              backgroundColor : "#f5dd58",
-             
-              //borderWidth: 3,
-              marginLeft: 15,
-              marginRight: 12,
-              borderRadius: 5,
-              textAlignVertical: 'center', 
+               height : 185,
+               width : 194,
+               borderRadius : 5,
+               backgroundColor : "#f757da",
+               elevation :10,
+               marginLeft : 16,
+               marginRight : 29,
+               
             }
-          }>Get 50% OFF on your first order</Text>
-          <Text style={styles.banner}>Get 50% OFF on your first order</Text>
+          }>
+          <View
+             style = {
+               {
+                  // height : 35,
+                  // width : 109,
+                  marginTop : 106,
+                  justifyContent : "center",
+                  // marginLeft : 43,
+                  
+               }
+             }
+          >
+          <Text
+           style = {
+             {
+               fontSize : 19,
+               textAlign : "center",
+               color : "#FFFFFF",
+               fontWeight : "700",
+             }
+           }
+          >Get 50% OFF</Text>
+          <Text
+            style={
+              {
+                fontSize : 12,
+                textAlign : "center",
+                color : "#FFFFFF",
+                fontWeight : "400",
+              }
+            }
+          >on your first order</Text>
+          </View>
+           </View> 
+
+           <View style={
+            {
+               height : 185,
+               width : 194,
+               borderRadius : 5,
+               backgroundColor : "#f5dd58",
+               elevation :10,
+               marginRight : 16,
+            }
+          }>
+           <View
+             style = {
+               {
+                  // height : 35,
+                  // width : 109,
+                  marginTop : 106,
+                  justifyContent : "center",
+                  // marginLeft : 43,
+                  
+               }
+             }
+          >
+          <Text
+           style = {
+             {
+               fontSize : 19,
+               textAlign : "center",
+               color : "#FFFFFF",
+               fontWeight : "700",
+             }
+           }
+          >Get 50% OFF</Text>
+          <Text
+            style={
+              {
+                fontSize : 12,
+                textAlign : "center",
+                color : "#FFFFFF",
+                fontWeight : "400",
+              }
+            }
+          >on your first order</Text>
+          </View>
+          </View>
         </ScrollView>
         <View
           style={{
-            marginTop: 25,
+            marginTop: 26,
             height: 38,
             width: 357,
             
@@ -331,11 +412,14 @@ const Screen1 = ({navigation}) => {
         </View>
         <Text
           style={{
-            marginLeft: 25,
+            height :21,
+           
+            marginLeft : 17,
+            fontWeight : "400",
             color : "#000000",
             //fontWeight : "300",
-            fontSize: 20,
-            marginTop : 20,
+            fontSize: 18,
+            marginTop : 27,
           }}>
           Choose from a variety of taste !
         </Text>
@@ -353,17 +437,12 @@ const Screen1 = ({navigation}) => {
                     style={{
                       height: 164,
                       width: 344.4,
-                      
+                      marginBottom : 32,
                       borderRadius: 20,
-                      // fontSize: 30,
-                      //borderWidth: 3,
                       flexDirection : "row",
-                      elevation : 5,
+                      elevation : 10,
                       backgroundColor : "#FFFFFF",
-                      // textAlign: 'center',
-                      // textAlignVertical: 'center',
-                      // color: '#000000',
-                      margin: 15,
+                      
                     }}>
                      <View 
                       style={
@@ -387,8 +466,11 @@ const Screen1 = ({navigation}) => {
                     >{key.text}</Text>
                     <Text
                        style={
-                         {
-                            fontSize : 18,
+                         {   
+                            height : 36,
+                            width : 168,
+                            marginTop : 8,
+                            fontSize : 15,
                             color : "#000000"
                          }
                        }
@@ -396,8 +478,11 @@ const Screen1 = ({navigation}) => {
                     <Text
                       style={
                         {
-                          marginTop : 5,
-                          color : "#000000"
+                          marginTop : 15,
+                          color : "#000000",
+                          height : 21,
+                          width : 125,
+
                         }
                       }
                     >Starting at Rs.{key.price}</Text>
@@ -627,27 +712,12 @@ const Screen1 = ({navigation}) => {
 export default Screen1;
 
 const styles = StyleSheet.create({
-  banner: {
-    height: 185,
-    width: 194,
-    fontSize: 25,
-    padding : 10,
-    textAlign: 'center',
-    color: '#FFFFFF',
-    elevation : 10,
-    fontWeight : "bold",
-    backgroundColor : "#f757da",
-   
-    //borderWidth: 3,
-    marginLeft: 15,
-    marginRight: 12,
-    borderRadius: 5,
-    textAlignVertical: 'center',
-  },
+  
   gridContainer: {
     flex: 1,
     justifyContent: 'center',
     alignSelf: 'center',
+    marginTop : 21,
     marginBottom: 40,
 
   },
